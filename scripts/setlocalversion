@@ -65,12 +65,10 @@ scm_version()
 				echo "+"
 				return
 			fi
-<<<<<<< HEAD
 
 			# Avoid asking git for tag as it could be extremely slow.
 			# We print -g{commitish}.
 			printf '%s%s' -g $head
-=======
 			# If we are past a tagged commit (like
 			# "v2.6.30-rc5-302-g72357d5"), we pretty print it.
 			#
@@ -91,7 +89,6 @@ scm_version()
 				head="$(echo $head | cut -c1-12)"
 				printf '%s%s' -g $head
 			fi
->>>>>>> 7491c6421969e4607181b8c7fd527e5ccba047e0
 		fi
 
 		# Is this git on svn?
